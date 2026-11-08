@@ -58,9 +58,11 @@ const initializeDBAndServer = async () => {
       console.log("10 books inserted successfully");
     }
 
-    app.listen(3000, () => {
-      console.log("Server is running at http://localhost:3000");
-    });
+    const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
   } catch (error) {
     console.log("Database Error:", error.message);
