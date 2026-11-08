@@ -1,6 +1,9 @@
 {
   "name": "lab-02",
   "version": "1.0.0",
+  "engines": {
+  "node": "22.x"
+},
   "description": "",
   "main": "index.js",
   "scripts": {
